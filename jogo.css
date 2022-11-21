@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+html {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background: linear-gradient(90deg, lightgrey 0%, rgba(173,216,230,1) 100%);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 100px;
+    margin: 60px;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+.quadrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    font-size: 50px;
+}
+
+.quadrado:hover {
+    background-color: cornflowerblue;
+    transition: .25s;
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.selecionado {
+    background: linear-gradient(90deg, white 0%, rgba(0,212,255,1) 100%);
+}
+
+.resultado {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 15px 15px 35px 15px;
+}
+
+
+
+#btn {
+    width: 150px;
+    height: 55px;
+    border-radius: 5px;
+    margin-top: 0px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    border: none;
+    font-size: 25px;
+    color: white;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#btn:hover {
+    transform: scale(1.1);
+    transition: .25s;
+    cursor: pointer;
+    background: linear-gradient(90deg,rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%);
+
+}
+
+#btn:active {
+    transition: .05s;
+    transform: scale(1);
+    background-color: rgb(55, 115, 226);
+}
+
+.jogador {
+    font-family: 'Shadows Into Light', cursive;
+    margin-left: 0px;
+    margin-right: 20px;
+    padding: 15px;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+@media (max-width: 680px) {
+        .quadrado {
+            width: 100px;
+            height: 100px;
+        }
+        .titulo {
+            font-size: 62px;
+        }
+        footer {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            height: 800px;
+        }
+}
